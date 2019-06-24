@@ -1,0 +1,16 @@
+Package: doktor
+Type: Package
+Title: Rmarkdown Templates For dxFeed
+Version: 0.1
+Authors@R: c(
+    person(
+        given = "Anton",
+        family = "Antonov",
+        role = c("aut", "cre"),
+        email = "antonov@dxfeed.com"
+    ))
+Description: A collection of Rmarkdown document templates for various internal and external purposes.
+License: file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
