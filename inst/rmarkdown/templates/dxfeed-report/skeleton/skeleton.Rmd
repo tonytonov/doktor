@@ -1,7 +1,7 @@
 ---
 title: dxFeed report
 author: Pierre Bezukhov, dxFeed
-recipient: Napoleon Bonaparte, Emperor of the French
+recipient: Napoléon Bonaparte, Emperor of the French
 subject: What a nice day
 date: \today
 thanks: "Thanks to all involved parties, etc."
