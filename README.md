@@ -25,4 +25,8 @@ Alternatively, check out the repository and install manually.
 
 Create new document from RStudio via "File" -- "New File" -- "R Markdown..." -- "From Template". Knit the default document to see if everything works fine. 
 
+Examples are in `inst/`:
+
+  * [dxFeed report](https://github.com/tonytonov/doktor/blob/master/inst/dxfeed-report-example.pdf)
+
 Feel free to open issues and suggest new templates or tweak existing.
