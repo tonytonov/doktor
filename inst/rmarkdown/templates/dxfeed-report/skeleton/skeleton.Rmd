@@ -29,6 +29,9 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+if(.Platform$OS.type == "unix") {
+  knitr::opts_chunk$set(engine.path = '/usr/bin/python3')
+}
 ```
 
 \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
@@ -59,7 +62,14 @@ i\hbar \frac{\partial \Psi}{\partial t} = -\frac{\hbar^2}{2m}
 # R code
 
 ```{r}
-pnorm(-3:3)
+pnorm(-2:2)
+```
+
+# Python code
+
+```{python}
+import scipy.stats, numpy
+scipy.stats.norm.cdf(numpy.arange(-2, 3, 1))
 ```
 
 # Images
@@ -67,4 +77,3 @@ pnorm(-3:3)
 ```{r, fig.cap='Singularity, as in [@Vinge1993]'}
 plot(function(x) -1/x, -0.1, -0.01)
 ```
-
