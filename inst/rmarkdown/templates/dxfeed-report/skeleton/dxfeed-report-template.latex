@@ -284,6 +284,9 @@ $if(author)$
 $endif$
 \date{$date$}
 
+% Decrease vertical space between text and header
+\usepackage[compact]{titlesec}
+
 % Footer: page number on the right, logo (if provided) on the left
 \usepackage{fancyhdr}
 \usepackage[export]{adjustbox}
