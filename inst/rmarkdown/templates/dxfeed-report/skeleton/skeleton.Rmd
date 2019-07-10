@@ -1,5 +1,6 @@
 ---
 title: dxFeed report
+report-style-memo: yes
 author: Pierre Bezukhov, dxFeed
 recipient: Napoléon Bonaparte, Emperor of the French
 subject: What a nice day
@@ -33,8 +34,6 @@ if(.Platform$OS.type == "unix") {
   knitr::opts_chunk$set(engine.path = '/usr/bin/python3')
 }
 ```
-
-\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
 
 # Notes
 

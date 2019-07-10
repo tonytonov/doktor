@@ -314,42 +314,46 @@ $endif$
 % Flush title to the left
 \usepackage{titling}
 
-\pretitle{
-  \begin{flushright}
-  \LARGE
-  \href{https://www.dxfeed.com/}{\includegraphics[width=0.25\textwidth, keepaspectratio]{$logo$}}\\[\bigskipamount]
-  \end{flushright}
-  \begin{flushleft}\LARGE\bfseries
-}
-\posttitle{
-  \end{flushleft}
-}
+$if(report-style-memo)$
+  \pretitle{
+    \begin{flushright}
+    \LARGE
+    \href{https://www.dxfeed.com/}{\includegraphics[width=0.25\textwidth, keepaspectratio]{$logo$}}\\[\bigskipamount]
+    \end{flushright}
+    \begin{flushleft}\LARGE\bfseries
+  }
+  \posttitle{
+    \end{flushleft}
+  }
 
-\preauthor{
-  \par\begin{flushleft}\large
-  %\renewcommand{\arraystretch}{0.8}%
-  \begin{tabular}{ll}
-    \textbf{From: } & \text{$author$} \\
-    $if(recipient)$
-    \textbf{To: } & \text{$recipient$} \\
-    $endif$
-    $if(subject)$
-    \textbf{Subject: } & \text{$subject$} \\
-    $endif$
-    $if(date)$
-    \textbf{Date: } & \text{$date$} \\
-    $endif$
-  \end{tabular}
-  \renewcommand{\arraystretch}{1}%
-}
-\author{}
-\postauthor{
-  \end{flushleft}
-}
+  \preauthor{
+    \par\begin{flushleft}\large
+    %\renewcommand{\arraystretch}{0.8}%
+    \begin{tabular}{ll}
+      \textbf{From: } & \text{$author$} \\
+      $if(recipient)$
+      \textbf{To: } & \text{$recipient$} \\
+      $endif$
+      $if(subject)$
+      \textbf{Subject: } & \text{$subject$} \\
+      $endif$
+      $if(date)$
+      \textbf{Date: } & \text{$date$} \\
+      $endif$
+    \end{tabular}
+    \renewcommand{\arraystretch}{1}%
+    \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+  }
+  \author{}
+  \postauthor{
+    \end{flushleft}
+  }
 
-\predate{}
-\date{}
-\postdate{}
+  \predate{}
+  \date{}
+  \postdate{}
+$else$
+$endif$
 
 \singlespacing
 
