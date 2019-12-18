@@ -40,6 +40,8 @@ $endif$
 \usepackage{mathtools}
 \usepackage{caption}
 \usepackage{ifthen}
+\usepackage[UKenglish]{babel}
+\usepackage[UKenglish]{isodate}
 \cleanlookdateon
 \exhyphenpenalty=1000
 \hyphenpenalty=1000
