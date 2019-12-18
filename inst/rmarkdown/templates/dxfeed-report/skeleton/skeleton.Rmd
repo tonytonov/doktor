@@ -6,8 +6,9 @@ recipient: Napoléon Bonaparte, Emperor of the French
 subject: What a nice day
 date: \today
 thanks: "Thanks to all involved parties, etc."
-mainfont: Merriweather
-seriffont: Merriweather
+keywords: "Market data provider"
+mainfont: Merriweather Regular
+seriffont: Merriweather Regular
 sansfont: Ubuntu
 monofont: Ubuntu Mono
 fontsize: 12pt
@@ -16,7 +17,7 @@ spacing: double
 papersize: a4paper
 bibliography: references.bib
 biblio-style: apalike
-logo: New-logo-horizontal-oranje.eps
+logo: dxfeed-logo.eps
 output:
   pdf_document:
     latex_engine: xelatex
@@ -26,7 +27,6 @@ output:
     keep_tex: no
     template: dxfeed-report-template.latex
 ---
-
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -49,13 +49,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 # LaTeX
 
-Use regular \LaTeX, like so:
+Use regular \LaTeX, like in equation \eqref{cat-is-dead}:
 
 \vspace*{\stretch{1}}
-\begin{displaymath}
+\begin{equation}
+\label{cat-is-dead}
 i\hbar \frac{\partial \Psi}{\partial t} = -\frac{\hbar^2}{2m}
 \frac{\partial^2 \Psi}{\partial x^2} + V \Psi
-\end{displaymath}
+\end{equation}
 \vspace*{\stretch{1}}
 
 # R code
@@ -68,7 +69,7 @@ pnorm(-2:2)
 
 ```{python}
 import scipy.stats, numpy
-scipy.stats.norm.cdf(numpy.arange(-2, 3, 1))
+print(scipy.stats.norm.cdf(numpy.arange(-2, 3, 1)))
 ```
 
 # Images

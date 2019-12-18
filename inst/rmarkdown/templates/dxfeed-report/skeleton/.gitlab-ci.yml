@@ -1,0 +1,8 @@
+compile_pdf:
+  image: rocker/verse
+  script:
+    - R -e "rmarkdown::render('skeleton.Rmd', output_file='dxfeed-report.pdf')"
+  stage: build
+  artifacts:
+    paths:
+      - "dxfeed-report.pdf"
