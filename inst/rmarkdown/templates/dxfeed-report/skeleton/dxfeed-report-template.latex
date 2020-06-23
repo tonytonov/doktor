@@ -134,8 +134,6 @@ $if(natbib)$
 \bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
 \usepackage{etoolbox}
 \makeatletter
-% Remove comma after author
-\setcitestyle{aysep={}}
 \patchcmd{\NAT@citex}
 	  {\@citea\NAT@hyper@{%
 		 \NAT@nmfmt{\NAT@nm}%
