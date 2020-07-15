@@ -5,7 +5,7 @@ Here's a pill for your `latex`-ache. Allows to build reports with consistent sty
 ## Installation
 
 You obviously need [R](https://www.r-project.org/). [RStudio](https://www.rstudio.com/) 
-is optional, but recommended. You also need a `latex` installation, like [TeX Live](https://www.tug.org/texlive/) or [MiKTeX](https://miktex.org/), as well as package `rmarkdown`. 
+is optional, but recommended. You also need a `latex` installation, like [TeX Live](https://www.tug.org/texlive/) or [MiKTeX](https://miktex.org/), as well as package `rmarkdown`.  Lastly, make sure SciPy is installed (`python3-scipy` in dpkg-based distros).
 
 The example report uses fonts [Merriweather](https://github.com/SorkinType/Merriweather) and [Ubuntu](https://design.ubuntu.com/font/). 
 
