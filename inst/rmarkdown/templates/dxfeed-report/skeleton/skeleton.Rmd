@@ -6,9 +6,9 @@ recipient: Napoléon Bonaparte, Emperor of the French
 subject: What a nice day
 date: \today
 thanks: "Thanks to all involved parties, etc."
-mainfont: Merriweather
-seriffont: Merriweather
-sansfont: Ubuntu
+mainfont: Merriweather Regular
+seriffont: Merriweather Regular
+sansfont: Merriweather Sans
 monofont: Ubuntu Mono
 fontsize: 12pt
 monospace-url: yes
