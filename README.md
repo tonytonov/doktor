@@ -10,7 +10,7 @@ Here's a pill for your `latex`-ache. Allows to build reports with consistent sty
   [RStudio](https://www.rstudio.com/) is optional, but recommended.
 - You also need a `latex` installation, like [TeX
   Live](https://www.tug.org/texlive/) or [MiKTeX](https://miktex.org/),
-- as well as the package `rmarkdown`. 
+- as well as `rmarkdown` package. 
 - The example report uses *Merriweather* and *Ubuntu* fonts; see below for
   installation instructions.
 

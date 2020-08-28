@@ -48,11 +48,6 @@ $endif$
 \widowpenalty=1000
 \clubpenalty=1000
 \renewcommand*{\backref}[1]{}
-\renewcommand*{\backrefalt}[4]{%
-    \ifcase #1 (Not cited.)%
-    \or        Cited on page~#2.%
-    \else      Cited on pages~#2.%
-    \fi}
 \renewcommand{\backreftwosep}{ and~}
 \renewcommand{\backreflastsep}{ and~}
 \hypersetup{
@@ -139,8 +134,6 @@ $if(natbib)$
 \bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
 \usepackage{etoolbox}
 \makeatletter
-% Remove comma after author
-\setcitestyle{aysep={}}
 \patchcmd{\NAT@citex}
 	  {\@citea\NAT@hyper@{%
 		 \NAT@nmfmt{\NAT@nm}%
@@ -186,9 +179,6 @@ $endfor$
 $endif$
 $if(listings)$
 \usepackage{listings}
-$endif$
-$if(lhs)$
-\lstnewenvironment{code}{\lstset{language=R,basicstyle=\small\ttfamily}}{}
 $endif$
 $if(highlighting-macros)$
 $highlighting-macros$
