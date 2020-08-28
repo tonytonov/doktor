@@ -60,4 +60,13 @@ Examples are in `inst/`:
 
   * [dxFeed report](https://github.com/tonytonov/doktor/blob/master/inst/dxfeed-report-example.pdf)
 
+## LyX Templates
+
+There are two additional LyX templates in `inst/lyx/templates/`:
+
+  * `dxfeed-doktor.lyx` which mimics the look of `doktor`-generated documents
+    --- handy if you need to typeset complicated mathematics.  You won't be able
+    to run R code chunks and get the output right in the document, though.
+  * `dxfeed-slides.lyx` for producing dxFeed-branded beamer presentation slides.
+
 Feel free to open issues and suggest new templates or tweak existing.
