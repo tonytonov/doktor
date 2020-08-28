@@ -9,7 +9,7 @@ thanks: "Thanks to all involved parties, etc."
 keywords: "Market data provider"
 mainfont: Merriweather Regular
 seriffont: Merriweather Regular
-sansfont: Ubuntu
+sansfont: Merriweather Sans
 monofont: Ubuntu Mono
 fontsize: 12pt
 monospace-url: yes
