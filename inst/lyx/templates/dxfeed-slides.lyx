@@ -1,0 +1,1539 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+%%% PACKAGES  %%%
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage{colortbl}
+\usepackage{savesym}
+\savesymbol{framed}
+\usepackage{minted}
+\restoresymbol{M}{framed}
+\usepackage{newunicodechar}
+\newunicodechar{ᵃ}{$^a$}
+\newunicodechar{∈}{$\in$}
+\newunicodechar{≈}{$\approx$}
+\usepackage{animate}
+\usepackage{multirow}
+\usepackage{upgreek}
+\usepackage{fixmath}
+
+%%% APPEARANCE %%%
+\usetheme{dxFeed}
+
+%%% MATH OPERATORS %%%
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator{\pdf}{pdf}
+\DeclareMathOperator{\pmf}{pmf}
+\DeclareMathOperator{\cdf}{cdf}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\dom}{dom}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\sign}{sign}
+\end_preamble
+\options aspectratio=169,xcolor=table
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginSection[]{
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+frametitle{Outline}   
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tableofcontents[currentsection] 
+\end_layout
+
+\begin_layout Plain Layout
+
+    %
+\backslash
+tableofcontents[currentsection,currentsubsection]
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Presentation Title
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Title
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subtitle
+Presentation Subtitle
+\end_layout
+
+\begin_layout Author
+Author Name
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Name
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+user.name@devexperts.com
+\end_layout
+
+\begin_layout Date
+Presentation Date
+\end_layout
+
+\begin_layout Section
+Standard Environments
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Std.
+ Env.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Bullet- and Numbered Lists
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsecname
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout ColumnsCenterAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+0.45
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Point 1
+\end_layout
+
+\begin_layout Itemize
+Point 2
+\end_layout
+
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+0.45
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Point 1
+\end_layout
+
+\begin_layout Enumerate
+Point 2
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Subsection
+Description Lists
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsecname
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Item
+\begin_inset space ~
+\end_inset
+
+1 Description 1
+\end_layout
+
+\begin_layout Description
+Item
+\begin_inset space ~
+\end_inset
+
+2 Description 2.
+ Note that if a description is long, it will automatically be split into
+ multiple lines, and each line will be indented.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Blocks
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsecname
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Normal
+\end_layout
+
+\begin_layout Standard
+Use blocks to group related information:
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Block Name
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Point 1
+\end_layout
+
+\begin_layout Itemize
+Point 2
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsecname
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Alert and Example
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+Use alert and example blocks when necessary:
+\end_layout
+
+\begin_deeper
+\begin_layout ColumnsCenterAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+0.45
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout AlertBlock
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Alert Block
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Point 1
+\end_layout
+
+\begin_layout Itemize
+Point 2
+\end_layout
+
+\end_deeper
+\begin_layout Column
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+0.45
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Example Block
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Point 1
+\end_layout
+
+\begin_layout Itemize
+Point 2
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Section
+Special Environments
+\end_layout
+
+\begin_layout Subsection
+Code Blocks
+\end_layout
+
+\begin_layout FragileFrame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Code Blocks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout FragileFrame
+Insert code using the 
+\family typewriter
+
+\begin_inset Flex Structure
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+minted
+\end_layout
+
+\end_inset
+
+
+\family default
+ package.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minted}[fontsize=
+\backslash
+normalsize, xleftmargin=4mm]{r}
+\end_layout
+
+\begin_layout Plain Layout
+
+yndx_16m <- 
+\end_layout
+
+\begin_layout Plain Layout
+
+  lob::read_lob_log(
+\end_layout
+
+\begin_layout Plain Layout
+
+    stocks_path,
+\end_layout
+
+\begin_layout Plain Layout
+
+    symbol_name = 'YNDX'
+\end_layout
+
+\begin_layout Plain Layout
+
+  ) %>% 
+\end_layout
+
+\begin_layout Plain Layout
+
+  filter(
+\end_layout
+
+\begin_layout Plain Layout
+
+    TIME < hms::as.hms('10:16:00')
+\end_layout
+
+\begin_layout Plain Layout
+
+  )
+\end_layout
+
+\begin_layout Plain Layout
+
+M <- lob::MaslovLOB$new(yndx_16m)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minted}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout FragileFrame
+If you need to center the code horizontally, put it inside a 
+\begin_inset Flex Structure
+status open
+
+\begin_layout Plain Layout
+minibox
+\end_layout
+
+\end_inset
+
+ (
+\begin_inset Flex Alert
+status collapsed
+
+\begin_layout Plain Layout
+Insert\SpecialChar menuseparator
+Box\SpecialChar menuseparator
+Frameless
+\end_layout
+
+\end_inset
+
+) of 50% textwidth.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout FragileFrame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Code Blocks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Plain
+\end_layout
+
+\end_deeper
+\begin_layout FragileFrame
+Insert a program output with 
+\family typewriter
+minted
+\family default
+ using 
+\family typewriter
+
+\begin_inset Flex Structure
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+text
+\end_layout
+
+\end_inset
+
+
+\family default
+ syntax highlighting:
+\end_layout
+
+\begin_layout FragileFrame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{bg_metallic}{RGB}{235,235,235} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minted}[fontsize=
+\backslash
+small, xleftmargin=1mm, xrightmargin=1mm, bgcolor=bg_metallic]{text}
+\end_layout
+
+\begin_layout Plain Layout
+
+Maslov model LOB fit on YNDX @ Unknown 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+• Time:
+\end_layout
+
+\begin_layout Plain Layout
+
+  [10:00:00.339, 10:00:00.339]; order № = 0 / 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+• LOB (total volume = 0; ask = NA, bid = NA):
+\end_layout
+
+\begin_layout Plain Layout
+
+  <empty>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+• Market prices (current = NA, № unique ticks = 0):
+\end_layout
+
+\begin_layout Plain Layout
+
+  <empty>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+• LOB parameters:
+\end_layout
+
+\begin_layout Plain Layout
+
+  d_price = 0.5, d_volume ≈ 73.6, d_time ≈ 0.3
+\end_layout
+
+\begin_layout Plain Layout
+
+  P(sell) ≈ 0.1516, P(l.o.) ≈ 0.994
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minted}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Kable Tables
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+Kable
+\family default
+ Tables
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+Use 
+\family typewriter
+
+\begin_inset Flex Structure
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+knittr::kable()
+\end_layout
+
+\end_inset
+
+
+\family default
+ to produce a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ rendering of a 
+\family typewriter
+tibble
+\family default
+.
+ To increase the height of the rows, add 
+\family typewriter
+
+\backslash
+renewcommand{
+\backslash
+arraystretch}{1.5}
+\family default
+ before and 
+\family typewriter
+
+\backslash
+renewcommand{
+\backslash
+arraystretch}{1}
+\family default
+ after the table.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+arraystretch}{1.5}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+rowcolors{2}{gray!6}{white}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{table}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{
+\backslash
+label{tab:}Sample NVTK stock trade log}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{-6mm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+resizebox{
+\backslash
+linewidth}{!}{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}[t]{rlllrlrrrr}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hiderowcolors
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+toprule
+\end_layout
+
+\begin_layout Plain Layout
+
+NO & SECCODE & BUYSELL & TIME & ORDERNO & ACTION & PRICE & VOLUME & TRADENO
+ & TRADEPRICE
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+midrule
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+showrowcolors
+\end_layout
+
+\begin_layout Plain Layout
+
+27274 & NVTK & S & 10:00:01.603167 & 26064 & LIMIT & 659.8 & 50 & NA & NA
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+27278 & NVTK & S & 10:00:01.603869 & 26068 & LIMIT & 660.3 & 1000 & NA & NA
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+27280 & NVTK & S & 10:00:01.604136 & 25980 & CANCEL & 660.6 & 1000 & NA &
+ NA
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+27876 & NVTK & B & 10:00:01.769164 & 26496 & LIMIT & 659.8 & 10 & NA & NA
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+27877 & NVTK & B & 10:00:01.769164 & 26496 & TRADE & 659.8 & 10 & 2597014639
+ & 659
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+27878 & NVTK & S & 10:00:01.769164 & 15163 & TRADE & 659.0 & 10 & 2597014639
+ & 659
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+bottomrule
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{table}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rowcolors{2}{white}{white}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+arraystretch}{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Section
+Mathematics
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Mathematics
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ux}{\upxi}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Pcal}{\mathcal{P}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ue}{\upeta}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Qcal}{\mathcal{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\d}{\,\mathrm{d}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\RR}{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider using upright (Greek) letters for random variables and processes:
+ 
+\begin_inset Formula $\ux$
+\end_inset
+
+ instead of 
+\begin_inset Formula $\xi$
+\end_inset
+
+; 
+\begin_inset Formula $\upsigma$
+\end_inset
+
+ instead of 
+\begin_inset Formula $\sigma$
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{X}_{t}$
+\end_inset
+
+ instead of 
+\begin_inset Formula $X_{t}$
+\end_inset
+
+.
+ Reserve slanted fonts to denote variables or parameters (think 
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+ vs 
+\begin_inset Formula $\upsigma$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Convolution
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $\ux\sim\Pcal$
+\end_inset
+
+, 
+\begin_inset Formula $\ue\sim\Qcal$
+\end_inset
+
+; then the CDF of their sum is the 
+\emph on
+convolution
+\emph default
+ of their CDF's:
+\begin_inset Formula 
+\[
+F_{\ux+\ue}(x)=\iint_{\left\{ s+t<x\right\} }p_{\ux,\ue}(s,t)\d s\d t=\int_{\RR}F_{\ux}(x-y)\d F_{\ue}(y)=F_{\ux}*F_{\ue}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Overlays
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
++-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Overlays
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+See
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Flex Alert
+status collapsed
+
+\begin_layout Plain Layout
+Help\SpecialChar menuseparator
+Specific Manuals\SpecialChar menuseparator
+Beamer Presentations
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+Note that overlay environments and command like 
+\family typewriter
+
+\begin_inset Flex Structure
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\family default
+ may be conveniently inserted as any other environment in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+LyX
+\end_layout
+
+\end_inset
+
+ using the drop-down menu.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+Also note that the frame counter in the bottom left corner is not being
+ increased.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+Lastly! If 
+\begin_inset Flex Structure
+status open
+
+\begin_layout Plain Layout
+Default Overlay Specifications +-
+\end_layout
+
+\end_inset
+
+ is inserted in front of the frame name, then the lists on that frame are
+ paused automatically after 
+\emph on
+every
+\emph default
+ item:
+\end_layout
+
+\begin_layout Itemize
+Item 1
+\end_layout
+
+\begin_layout Itemize
+Item 2
+\end_layout
+
+\begin_layout Itemize
+Item 3
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+Summary
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
++-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Summary
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Point 1
+\end_layout
+
+\begin_layout Itemize
+Point 2
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+\start_of_appendix
+Appendix
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+References
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+beamertemplatebookbibitems
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+literal "true"
+
+\end_inset
+
+A.
+\begin_inset space ~
+\end_inset
+
+Author.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+
+\emph on
+ Book Name
+\emph default
+.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Publisher, Year
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
